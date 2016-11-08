@@ -1004,7 +1004,7 @@ public class Notifier {
                 return;
             }
 
-            Uri soundUri = Uri.parse(soundPath);
+            final Uri soundUri = Uri.parse("file://" + soundPath);
             if (soundUri != null) {
                 if (!soundUri.isAbsolute()) {
                     soundUri = Uri.parse("file://" + soundPath);
