@@ -57,7 +57,7 @@ public class AmbientDisplayTile extends QSTileImpl<BooleanState> {
     public static final String TILE_SPEC = "ambient_display";
 
     private final Icon mIcon = ResourceIcon.get(R.drawable.ic_qs_ambient_display);
-    private final SettingObserver mSetting;
+    private final SecureSetting mSetting;
 
     @Inject
     public AmbientDisplayTile(
@@ -125,6 +125,12 @@ public class AmbientDisplayTile extends QSTileImpl<BooleanState> {
     @Override
     public Intent getLongClickIntent() {
         return new Intent(Settings.ACTION_DISPLAY_SETTINGS);
+    }
+
+    private void setEnabled(boolean enabled) {
+        Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.DOZE_ENABLED,
+                enabled ? 1 : 0);
     }
 
     @Override
