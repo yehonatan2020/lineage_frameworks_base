@@ -279,7 +279,4 @@ interface IBatteryStats {
     /** Exposed as a test API. */
     @EnforcePermission("DEVICE_POWER")
     void suspendBatteryInput();
-
-    /** {@hide} */
-    void resetStatistics();
 }

@@ -562,12 +562,4 @@ public class BatteryManager {
             throw e.rethrowFromSystemServer();
         }
     }
-
-    public void resetStatistics() {
-        try {
-            mBatteryStats.resetStatistics();
-        } catch (RemoteException e) {
-            throw e.rethrowFromSystemServer();
-        }
-    }
 }
