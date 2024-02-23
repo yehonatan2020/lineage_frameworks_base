@@ -174,7 +174,7 @@ class DisplayDeviceRepository implements DisplayAdapter.Listener {
                 if (diff == DisplayDeviceInfo.DIFF_STATE) {
                      Slog.i(TAG, "Display device changed state: \"" + info.name
                             + "\", " + Display.stateToString(info.state));
-                } else if (diff != 0) {
+                } else if (diff != DisplayDeviceInfo.DIFF_HDR_SDR_RATIO) {
                     Slog.i(TAG, "Display device changed: " + info);
                 }
             }
