@@ -1467,9 +1467,4 @@
     <style name="Theme.PrivacyDialog" parent="@style/Theme.SystemUI.Dialog">
         <item name="android:colorBackground">?androidprv:attr/materialColorSurfaceContainer</item>
     </style>
-    
-    <!-- Pure Tuner Theme-->
-    <style name="ExTunerSettings" parent="@android:style/Theme.DeviceDefault.Settings">
-        <item name="preferenceTheme">@style/TunerPreferenceTheme</item>
-    </style>
 </resources>
