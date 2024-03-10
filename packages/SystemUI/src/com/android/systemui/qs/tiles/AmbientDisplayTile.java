@@ -57,7 +57,7 @@ public class AmbientDisplayTile extends QSTileImpl<BooleanState> {
     public static final String TILE_SPEC = "ambient_display";
 
     private final Icon mIcon = ResourceIcon.get(R.drawable.ic_qs_ambient_display);
-    private final SecureSetting mSetting;
+    private final SettingObserver mSetting;
 
     @Inject
     public AmbientDisplayTile(
