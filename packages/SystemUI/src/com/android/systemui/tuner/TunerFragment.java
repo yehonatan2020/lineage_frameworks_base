@@ -94,37 +94,4 @@ public class TunerFragment extends PreferenceFragment {
 
         MetricsLogger.visibility(getContext(), MetricsEvent.TUNER, false);
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                getActivity().finish();
-                return true;
-            case MENU_REMOVE:
-                mTunerService.showResetRequest(() -> {
-                    if (getActivity() != null) {
-                        getActivity().finish();
-                    }
-                });
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    public static class TunerWarningFragment extends DialogFragment {
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            return new AlertDialog.Builder(getContext())
-                    .setTitle(R.string.tuner_warning_title)
-                    .setMessage(R.string.tuner_warning)
-                    .setPositiveButton(R.string.got_it, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Settings.Secure.putInt(getContext().getContentResolver(),
-                                    SETTING_SEEN_TUNER_WARNING, 1);
-                        }
-                    }).show();
-        }
-    }
 }
