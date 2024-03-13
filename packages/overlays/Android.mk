@@ -31,59 +31,35 @@ LOCAL_REQUIRED_MODULES := \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \
 	IconPackCircularSystemUIOverlay \
-	IconPackCircularThemePickerOverlay \
 	IconPackPUIAndroidOverlay \
-        IconPackPUILauncherOverlay \
-        IconPackPUISettingsOverlay \
-        IconPackPUISystemUIOverlay \
-        IconPackPUIThemePickerOverlay \
+	IconPackPUILauncherOverlay \
+	IconPackPUISettingsOverlay \
+	IconPackPUISystemUIOverlay \
+	IconPackPUIThemePickerOverlay \
 	IconPackVictorAndroidOverlay \
 	IconPackVictorLauncherOverlay \
 	IconPackVictorSettingsOverlay \
 	IconPackVictorSystemUIOverlay \
-	IconPackVictorThemePickerOverlay \
 	IconPackSamAndroidOverlay \
 	IconPackSamLauncherOverlay \
 	IconPackSamSettingsOverlay \
 	IconPackSamSystemUIOverlay \
-	IconPackSamThemePickerOverlay \
 	IconPackKaiAndroidOverlay \
 	IconPackKaiLauncherOverlay \
 	IconPackKaiSettingsOverlay \
 	IconPackKaiSystemUIOverlay \
-	IconPackKaiThemePickerOverlay \
 	IconPackFilledAndroidOverlay \
 	IconPackFilledLauncherOverlay \
 	IconPackFilledSettingsOverlay \
 	IconPackFilledSystemUIOverlay \
-	IconPackFilledThemePickerOverlay \
 	IconPackRoundedAndroidOverlay \
 	IconPackRoundedLauncherOverlay \
 	IconPackRoundedSettingsOverlay \
 	IconPackRoundedSystemUIOverlay \
-	IconPackRoundedThemePickerOverlay \
-    IconPackOOSAndroidOverlay \
-    IconPackOOSLauncherOverlay \
-    IconPackOOSSettingsOverlay \
-    IconPackOOSSystemUIOverlay \
-    IconPackOOSThemePickerOverlay \
-    IconPackOutlineAndroidOverlay \
-    IconPackOutlineSettingsOverlay \
-    IconPackOutlineSystemUIOverlay \
-    IconPackAcherusAndroidOverlay \
-    IconPackAcherusSystemUIOverlay \
-    IconShapeCloudyOverlay \
-    IconShapeCylinderOverlay \
-    IconShapeFlowerOverlay \
-    IconShapeHeartOverlay \
-    IconShapeHexagonOverlay \
-    IconShapeLeafOverlay \
     IconShapePebbleOverlay \
-    IconShapeRoundedHexagonOverlay \
     IconShapeRoundedRectOverlay \
     IconShapeSquareOverlay \
     IconShapeSquircleOverlay \
-    IconShapeStretchedOverlay \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
@@ -94,7 +70,31 @@ LOCAL_REQUIRED_MODULES := \
 	NavigationBarModeGesturalOverlayExtraWideBack \
 	TransparentNavigationBarOverlay \
 	NotesRoleEnabledOverlay \
-	preinstalled-packages-platform-overlays.xml
+	preinstalled-packages-platform-overlays.xml \
+#   IconPackAcherusAndroidOverlay \
+#   IconPackAcherusSystemUIOverlay \
+#	IconPackCircularThemePickerOverlay \
+#	IconPackFilledThemePickerOverlay \
+#	IconPackKaiThemePickerOverlay \
+#   IconPackOOSAndroidOverlay \
+#   IconPackOOSLauncherOverlay \
+#   IconPackOOSSettingsOverlay \
+#   IconPackOOSSystemUIOverlay \
+#   IconPackOOSThemePickerOverlay \
+#   IconPackOutlineAndroidOverlay \
+#   IconPackOutlineSettingsOverlay \
+#   IconPackOutlineSystemUIOverlay \
+#	IconPackRoundedThemePickerOverlay \
+#	IconPackSamThemePickerOverlay \
+#	IconPackVictorThemePickerOverlay \
+#   IconShapeCloudyOverlay \
+#   IconShapeCylinderOverlay \
+#   IconShapeFlowerOverlay \
+#   IconShapeHeartOverlay \
+#   IconShapeHexagonOverlay \
+#   IconShapeLeafOverlay \
+#   IconShapeRoundedHexagonOverlay \
+#   IconShapeStretchedOverlay \
 
 include $(BUILD_PHONY_PACKAGE)
 include $(CLEAR_VARS)
