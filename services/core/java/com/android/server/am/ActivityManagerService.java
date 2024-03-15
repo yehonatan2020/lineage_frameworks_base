@@ -1716,10 +1716,6 @@ public class ActivityManagerService extends IActivityManager.Stub
     volatile ActivityManagerInternal.VoiceInteractionManagerProvider
             mVoiceInteractionManagerProvider;
 
-    // Swipe to screenshot
-    final SwipeToScreenshotObserver mSwipeToScreenshotObserver;
-    private boolean mIsSwipeToScrenshotEnabled;
-    
     final class UiHandler extends Handler {
         public UiHandler() {
             super(com.android.server.UiThread.get().getLooper(), null, true);
