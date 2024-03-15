@@ -3227,4 +3227,5 @@
     <string name="privacy_dialog_recent_app_usage_2">Recently used by <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> (<xliff:g id="attribution_label" example="For Wallet">%2$s</xliff:g> \u2022 <xliff:g id="proxy_label" example="Speech services">%3$s</xliff:g>)</string>
     <!-- Status bar tuner -->
     <string name="status_bar_items_title">Status bar icons</string>
+    <string name="status_bar_call_strength">Call strength</string>
 </resources>
